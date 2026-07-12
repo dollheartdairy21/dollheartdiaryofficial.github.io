@@ -1,0 +1,233 @@
+/* ==========================
+   DollheartDiary ♡
+   Luxury Soft Pink Theme
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FDF7F8;
+    color:#4A3D44;
+    line-height:1.8;
+}
+
+/* Navigation */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(255,255,255,.9);
+    position:sticky;
+    top:0;
+    backdrop-filter:blur(12px);
+    box-shadow:0 2px 15px rgba(0,0,0,.05);
+    z-index:1000;
+}
+
+.logo{
+    font-family:'Playfair Display',serif;
+    font-size:28px;
+    color:#D88FA5;
+    font-weight:700;
+}
+
+.navbar ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#4A3D44;
+    font-weight:500;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#D88FA5;
+}
+
+/* Hero */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(#FDF7F8,#F8E9EE);
+}
+
+.hero-content{
+    max-width:760px;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:64px;
+    color:#D88FA5;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#6A5A60;
+    margin-bottom:40px;
+}
+
+/* Buttons */
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn,
+.btn-outline{
+    padding:15px 34px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn{
+    background:#E7A9BC;
+    color:white;
+}
+
+.btn:hover{
+    background:#D88FA5;
+    transform:translateY(-3px);
+}
+
+.btn-outline{
+    border:2px solid #E7A9BC;
+    color:#D88FA5;
+    background:white;
+}
+
+.btn-outline:hover{
+    background:#FCEEF3;
+}
+
+/* Sections */
+
+section{
+    padding:80px 8%;
+}
+
+section h2{
+    text-align:center;
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    color:#D88FA5;
+    margin-bottom:45px;
+}
+
+/* Category Grid */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:24px;
+    box-shadow:0 12px 30px rgba(0,0,0,.07);
+    transition:.35s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    font-size:26px;
+    margin-bottom:15px;
+    font-family:'Playfair Display',serif;
+    color:#D88FA5;
+}
+
+.card p{
+    margin-bottom:20px;
+    color:#6A5A60;
+}
+
+.card a{
+    text-decoration:none;
+    color:#D88FA5;
+    font-weight:600;
+}
+
+/* About */
+
+.about p,
+.affiliate p{
+    max-width:760px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+
+/* Footer */
+
+footer{
+    padding:40px;
+    text-align:center;
+    background:white;
+    color:#8A6C75;
+    border-top:1px solid #F0D7DF;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:18px;
+}
+
+.navbar ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+section h2{
+    font-size:32px;
+}
+
+.logo{
+    font-size:24px;
+}
+
+}
